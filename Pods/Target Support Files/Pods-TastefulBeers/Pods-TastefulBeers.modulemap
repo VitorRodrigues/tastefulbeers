@@ -1,0 +1,6 @@
+framework module Pods_TastefulBeers {
+  umbrella header "Pods-TastefulBeers-umbrella.h"
+
+  export *
+  module * { export * }
+}
