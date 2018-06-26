@@ -26,6 +26,9 @@ class BeersCollectionDataSource: NSObject, UICollectionViewDataSource {
     /// Flag that indicates if we should continue notifying when reached the bottom
     var notifyBottom = true
     
+    
+    /// Amount of data BEFORE the end in order for the datasource say it reached the bottom
+    var threshold: Int = 5
     // MARK: - Methods
     
     /**
@@ -62,8 +65,12 @@ class BeersCollectionDataSource: NSObject, UICollectionViewDataSource {
         
         let beer = data[indexPath.row]
         cell.configure(with: beer)
+        
+        if notifyBottom && (indexPath.item + threshold) >= data.count {
+            delegate?.dataSourceReachedBottom(self)
+        }
+        
         return cell
     }
-    
     
 }

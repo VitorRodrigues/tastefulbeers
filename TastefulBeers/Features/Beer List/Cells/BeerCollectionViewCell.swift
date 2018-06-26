@@ -27,13 +27,19 @@ class BeerCollectionViewCell: UICollectionViewCell {
     private func initializeLayout() {
         layer.cornerRadius = 10
         layer.masksToBounds = true
+        backgroundColor = UIColor(white: 0.8, alpha: 1.0)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layer.shadowPath = UIBezierPath(rect: bounds).cgPath
     }
     
     override func prepareForReuse() {
         beerImage.sd_cancelCurrentImageLoad()
         beerName.text = ""
         abvLabel.text = ""
-        beerImage.image = nil
+        beerImage.image = #imageLiteral(resourceName: "placeholder")
     }
     
     func configure(with beer: Beer) {

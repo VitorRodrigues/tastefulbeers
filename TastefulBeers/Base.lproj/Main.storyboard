@@ -174,10 +174,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bfT-q3-hUp">
-                                                <rect key="frame" x="16" y="366.5" width="343" height="284.5"/>
+                                                <rect key="frame" x="16" y="366.5" width="343" height="17"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bw7-cI-LbH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="284.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -202,7 +202,7 @@
                                             <constraint firstItem="xXC-Nr-lxI" firstAttribute="trailing" secondItem="HLj-P8-xFp" secondAttribute="trailing" id="ikO-2i-Rbr"/>
                                             <constraint firstItem="HLj-P8-xFp" firstAttribute="leading" secondItem="ijh-dg-zaI" secondAttribute="leading" id="kTK-Ij-eWj"/>
                                             <constraint firstItem="HLj-P8-xFp" firstAttribute="trailing" secondItem="ijh-dg-zaI" secondAttribute="trailing" id="kod-Ce-dOw"/>
-                                            <constraint firstAttribute="bottom" secondItem="bfT-q3-hUp" secondAttribute="bottom" constant="16" id="oIs-aj-jo5"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bfT-q3-hUp" secondAttribute="bottom" constant="16" id="oIs-aj-jo5"/>
                                             <constraint firstItem="HLj-P8-xFp" firstAttribute="top" secondItem="ijh-dg-zaI" secondAttribute="bottom" constant="2" id="wiC-PB-Nd5"/>
                                         </constraints>
                                     </view>
@@ -218,7 +218,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Dg6-Px-FzJ" firstAttribute="leading" secondItem="bPW-Bf-1xG" secondAttribute="leading" id="AaJ-QY-9gU"/>
-                            <constraint firstItem="c56-oa-dWc" firstAttribute="height" secondItem="bPW-Bf-1xG" secondAttribute="height" id="T4k-Av-Dgs"/>
+                            <constraint firstItem="c56-oa-dWc" firstAttribute="height" secondItem="bPW-Bf-1xG" secondAttribute="height" placeholder="YES" id="T4k-Av-Dgs"/>
                             <constraint firstItem="Dg6-Px-FzJ" firstAttribute="top" secondItem="bPW-Bf-1xG" secondAttribute="top" id="hUf-YB-KeV"/>
                             <constraint firstAttribute="trailing" secondItem="Dg6-Px-FzJ" secondAttribute="trailing" id="jOV-xJ-0cy"/>
                             <constraint firstAttribute="bottom" secondItem="Dg6-Px-FzJ" secondAttribute="bottom" id="oyk-dd-MVA"/>

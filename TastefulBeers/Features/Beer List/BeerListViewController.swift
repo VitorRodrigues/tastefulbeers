@@ -52,6 +52,7 @@ class BeerListViewController: UIViewController, BeersDataSourceDelegate, UIColle
     
     // MARK: - Data Source Delegate
     func dataSourceReachedBottom(_ ds: BeersCollectionDataSource) {
+        ds.notifyBottom = false
         loadNextPage()
     }
     
